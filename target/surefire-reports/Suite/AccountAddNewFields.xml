@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="DESKTOP-UE7TLLR" failures="0" tests="5" name="TempsusCentralAccountDetails.AccountAddNewFields" time="89.861" errors="0" timestamp="25 Jul 2022 11:05:26 GMT">
+  <testcase classname="TempsusCentralAccountDetails.AccountAddNewFields" name="login" time="6.405"/>
+  <testcase classname="TempsusCentralAccountDetails.AccountAddNewFields" name="DeleteDropDownOption" time="15.666"/>
+  <testcase classname="TempsusCentralAccountDetails.AccountAddNewFields" name="addMandoryDropdownField" time="18.93"/>
+  <testcase classname="TempsusCentralAccountDetails.AccountAddNewFields" name="addMandoryTextField" time="27.697"/>
+  <testcase classname="TempsusCentralAccountDetails.AccountAddNewFields" name="deleteMandoryTextField" time="19.405"/>
+</testsuite>

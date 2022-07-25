@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="DESKTOP-UE7TLLR" failures="0" tests="1" name="TempsusCentralAccountDetails.AccountMandatoryFieldsBlank" time="18.742" errors="0" timestamp="25 Jul 2022 11:14:35 GMT">
+  <testcase classname="TempsusCentralAccountDetails.AccountMandatoryFieldsBlank" name="checkMandatoryFields" time="12.849"/>
+</testsuite>
