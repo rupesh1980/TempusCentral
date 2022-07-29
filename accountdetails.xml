@@ -2,19 +2,33 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 
-  <test thread-count="5" name="AccountAddDeleteNewFields">
+  <test thread-count="5" name="addAeminRoleFullAccessUser">
     <classes>
       <class name="TempsusCentralAccountDetails.AccountAddDeleteNewFields"/>
          </classes>
   </test> <!-- Test -->
-  <test thread-count="5" name="AccountMandatoryFieldsBlank">
+  
+ <test thread-count="5" name="AccountEdit">
+    <classes>
+      <class name="TempsusCentralAccountDetails.AccountEdit"/>
+         </classes>
+  </test> <!-- Test -->
+  
+ <test thread-count="5" name="AccountMandatoryFieldsBlank">
     <classes>
       <class name="TempsusCentralAccountDetails.AccountMandatoryFieldsBlank"/>
          </classes>
   </test> <!-- Test -->
-    <test thread-count="5" name="AccountNonMandatoryFieldsBlank">
+  
+  <test thread-count="5" name="AccountNonMandatoryFieldsBlank">
     <classes>
       <class name="TempsusCentralAccountDetails.AccountNonMandatoryFieldsBlank"/>
+         </classes>
+  </test> <!-- Test -->
+  
+    <test thread-count="5" name="AddLogo">
+    <classes>
+      <class name="TempsusCentralAccountDetails.AddLogo"/>
          </classes>
   </test> <!-- Test -->
     <test thread-count="5" name="MoreDetails">
@@ -22,11 +36,5 @@
       <class name="TempsusCentralAccountDetails.MoreDetails"/>
          </classes>
   </test> <!-- Test -->
-   <test thread-count="5" name="AddLogo">
-    <classes>
-      <class name="TempsusCentralAccountDetails.AddLogo"/>
-         </classes>
-  </test> <!-- Test -->
-  
   
 </suite> <!-- Suite -->

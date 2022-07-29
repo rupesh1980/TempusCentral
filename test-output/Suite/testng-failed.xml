@@ -1,19 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="TempsusCentralAccuntDetails.Listeners"/>
-  </listeners>
-  <test thread-count="5" name="AccountAddNewFields(failed)">
+  <test thread-count="5" name="deleteLocationalreadyexists(failed)">
     <classes>
-      <class name="TempsusCentralAccuntDetails.AccountAddNewFields">
+      <class name="companyDetails.deleteLocationalreadyexists">
         <methods>
-          <include name="getScreenShotPath"/>
-          <include name="testdown"/>
-          <include name="login"/>
           <include name="executebrowser"/>
+          <include name="locationDelete"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- TempsusCentralAccuntDetails.AccountAddNewFields -->
+      </class> <!-- companyDetails.deleteLocationalreadyexists -->
     </classes>
-  </test> <!-- AccountAddNewFields(failed) -->
+  </test> <!-- deleteLocationalreadyexists(failed) -->
+  <test thread-count="5" name="locationandparentlocationsame(failed)">
+    <classes>
+      <class name="companyDetails.locationandparentlocationsame">
+        <methods>
+          <include name="executebrowser"/>
+          <include name="teardown"/>
+          <include name="seleetParentLocationfirttime"/>
+        </methods>
+      </class> <!-- companyDetails.locationandparentlocationsame -->
+    </classes>
+  </test> <!-- locationandparentlocationsame(failed) -->
 </suite> <!-- Failed suite [Suite] -->

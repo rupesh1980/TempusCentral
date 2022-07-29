@@ -38,7 +38,7 @@ public class AccountEdit extends LoginPageSetup{
 	{
 		try {
 		
-			driver.get("http://192.168.0.128:9595/");
+			driver.get(prop.getProperty("url"));
 			driver.manage().window().maximize();
 			driver.findElement(username).sendKeys(prop.getProperty("username"));
 			driver.findElement(password).sendKeys(prop.getProperty("password"));

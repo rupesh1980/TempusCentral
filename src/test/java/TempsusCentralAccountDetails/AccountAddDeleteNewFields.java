@@ -32,6 +32,7 @@ import org.codehaus.plexus.util.FileUtils;
 public class AccountAddDeleteNewFields extends LoginPageSetup{
   
 	private static Logger log=LogManager.getLogger(AccountAddDeleteNewFields.class.getName());
+	
 	public WebDriver driver;
 	WebDriverWait wait;
      
@@ -109,7 +110,7 @@ public class AccountAddDeleteNewFields extends LoginPageSetup{
 					Thread.sleep(4000);
 					amf.clickOnMaster().click();
 					Thread.sleep(2000);			
-					amf.clickAccountDetails().click();		
+					amf.clickCompanyLocation().click();
 					Thread.sleep(2000);
 			        amf.clickEdit().click();
 			    	Thread.sleep(2000);			

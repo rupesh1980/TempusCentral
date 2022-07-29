@@ -1,71 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="12" passed="12" failed="0" skipped="0">
+<testng-results total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-25T16:42:43Z" name="Suite" finished-at="2022-07-25T16:45:55Z" duration-ms="192055">
+  <suite started-at="2022-07-29T12:41:46Z" name="Suite" finished-at="2022-07-29T12:42:31Z" duration-ms="45018">
     <groups>
     </groups>
-    <test started-at="2022-07-25T16:45:18Z" name="AddLogo" finished-at="2022-07-25T16:45:55Z" duration-ms="37526">
-      <class name="TempsusCentralAccountDetails.AddLogo">
-        <test-method is-config="true" signature="executebrowser()" started-at="2022-07-25T16:45:18Z" name="executebrowser" finished-at="2022-07-25T16:45:18Z" duration-ms="750" status="PASS">
+    <test started-at="2022-07-29T12:41:59Z" name="AdminRoleCompanyLocationViewEditDeleteCheck" finished-at="2022-07-29T12:42:31Z" duration-ms="31327">
+      <class name="AdminRoleMaster.AdminRoleCompanyLocationViewEditDeleteCheck">
+        <test-method is-config="true" signature="executebrowser()" started-at="2022-07-29T12:41:59Z" name="executebrowser" finished-at="2022-07-29T12:42:00Z" duration-ms="818" status="PASS">
         </test-method>
-        <test-method signature="login()" started-at="2022-07-25T16:45:18Z" name="login" finished-at="2022-07-25T16:45:20Z" duration-ms="1245" status="PASS">
+        <test-method signature="login()" started-at="2022-07-29T12:42:00Z" name="login" finished-at="2022-07-29T12:42:07Z" duration-ms="7279" status="PASS">
         </test-method>
-        <test-method signature="addJPGfileLogo()" started-at="2022-07-25T16:45:20Z" name="addJPGfileLogo" finished-at="2022-07-25T16:45:35Z" duration-ms="15103" status="PASS">
+        <test-method signature="companyLocationAdd()" started-at="2022-07-29T12:42:07Z" name="companyLocationAdd" finished-at="2022-07-29T12:42:14Z" duration-ms="6373" status="PASS">
         </test-method>
-        <test-method signature="addExcelsheet()" started-at="2022-07-25T16:45:35Z" name="addExcelsheet" finished-at="2022-07-25T16:45:50Z" duration-ms="15360" status="PASS">
+        <test-method signature="companyLocatinEditRecord()" started-at="2022-07-29T12:42:14Z" name="companyLocatinEditRecord" finished-at="2022-07-29T12:42:18Z" duration-ms="4311" status="PASS">
         </test-method>
-        <test-method is-config="true" signature="testdown()" started-at="2022-07-25T16:45:50Z" name="testdown" finished-at="2022-07-25T16:45:55Z" duration-ms="5066" status="PASS">
+        <test-method signature="companyLocationDelete()" started-at="2022-07-29T12:42:18Z" name="companyLocationDelete" finished-at="2022-07-29T12:42:27Z" duration-ms="8434" status="PASS">
         </test-method>
-      </class>
-    </test>
-    <test started-at="2022-07-25T16:42:43Z" name="AccountAddDeleteNewFields" finished-at="2022-07-25T16:44:16Z" duration-ms="93295">
-      <class name="TempsusCentralAccountDetails.AccountAddDeleteNewFields">
-        <test-method is-config="true" signature="executebrowser()" started-at="2022-07-25T16:42:43Z" name="executebrowser" finished-at="2022-07-25T16:42:45Z" duration-ms="1485" status="PASS">
-        </test-method>
-        <test-method signature="login()" started-at="2022-07-25T16:42:45Z" name="login" finished-at="2022-07-25T16:42:51Z" duration-ms="6343" status="PASS">
-        </test-method>
-        <test-method signature="DeleteDropDownOption()" started-at="2022-07-25T16:42:51Z" name="DeleteDropDownOption" finished-at="2022-07-25T16:43:07Z" depends-on-methods="TempsusCentralAccountDetails.AccountAddDeleteNewFields.login" duration-ms="15754" status="PASS">
-        </test-method>
-        <test-method signature="addMandoryDropdownField()" started-at="2022-07-25T16:43:07Z" name="addMandoryDropdownField" finished-at="2022-07-25T16:43:26Z" depends-on-methods="TempsusCentralAccountDetails.AccountAddDeleteNewFields.login" duration-ms="18981" status="PASS">
-        </test-method>
-        <test-method signature="addMandoryTextField()" started-at="2022-07-25T16:43:26Z" name="addMandoryTextField" finished-at="2022-07-25T16:43:53Z" depends-on-methods="TempsusCentralAccountDetails.AccountAddDeleteNewFields.login" duration-ms="27192" status="PASS">
-        </test-method>
-        <test-method signature="deleteMandoryTextField()" started-at="2022-07-25T16:43:53Z" name="deleteMandoryTextField" finished-at="2022-07-25T16:44:12Z" depends-on-methods="TempsusCentralAccountDetails.AccountAddDeleteNewFields.login" duration-ms="19391" status="PASS">
-        </test-method>
-        <test-method is-config="true" signature="testdown()" started-at="2022-07-25T16:44:12Z" name="testdown" finished-at="2022-07-25T16:44:16Z" duration-ms="4143" status="PASS">
+        <test-method is-config="true" signature="teardown()" started-at="2022-07-29T12:42:27Z" name="teardown" finished-at="2022-07-29T12:42:31Z" duration-ms="4111" status="PASS">
         </test-method>
       </class>
     </test>
-    <test started-at="2022-07-25T16:44:17Z" name="AccountMandatoryFieldsBlank" finished-at="2022-07-25T16:44:35Z" duration-ms="18742">
-      <class name="TempsusCentralAccountDetails.AccountMandatoryFieldsBlank">
-        <test-method is-config="true" signature="executebrowser()" started-at="2022-07-25T16:44:17Z" name="executebrowser" finished-at="2022-07-25T16:44:17Z" duration-ms="765" status="PASS">
+    <test started-at="2022-07-29T12:41:46Z" name="FullUserAdminRoleCompanyLocationVeiwEdditDeleteOnly" finished-at="2022-07-29T12:41:59Z" duration-ms="13657">
+      <class name="AdminRoleMaster.FullUserAdminRoleCompanyLocationVeiwEdditDeleteOnly">
+        <test-method is-config="true" signature="executebrowser()" started-at="2022-07-29T12:41:46Z" name="executebrowser" finished-at="2022-07-29T12:41:47Z" duration-ms="1702" status="PASS">
         </test-method>
-        <test-method signature="checkMandatoryFields()" started-at="2022-07-25T16:44:17Z" name="checkMandatoryFields" finished-at="2022-07-25T16:44:30Z" duration-ms="12849" status="PASS">
+        <test-method signature="login()" started-at="2022-07-29T12:41:47Z" name="login" finished-at="2022-07-29T12:41:53Z" duration-ms="6070" status="PASS">
         </test-method>
-        <test-method is-config="true" signature="testdown()" started-at="2022-07-25T16:44:30Z" name="testdown" finished-at="2022-07-25T16:44:35Z" duration-ms="5126" status="PASS">
+        <test-method signature="fullUseAccessAddEditOnly()" started-at="2022-07-29T12:41:53Z" name="fullUseAccessAddEditOnly" finished-at="2022-07-29T12:41:59Z" duration-ms="5709" status="PASS">
         </test-method>
-      </class>
-    </test>
-    <test started-at="2022-07-25T16:44:35Z" name="AccountNonMandatoryFieldsBlank" finished-at="2022-07-25T16:44:57Z" duration-ms="21425">
-      <class name="TempsusCentralAccountDetails.AccountNonMandatoryFieldsBlank">
-        <test-method is-config="true" signature="executebrowser()" started-at="2022-07-25T16:44:35Z" name="executebrowser" finished-at="2022-07-25T16:44:36Z" duration-ms="759" status="PASS">
-        </test-method>
-        <test-method signature="display()" started-at="2022-07-25T16:44:36Z" name="display" finished-at="2022-07-25T16:44:52Z" duration-ms="15541" status="PASS">
-        </test-method>
-        <test-method is-config="true" signature="testdown()" started-at="2022-07-25T16:44:52Z" name="testdown" finished-at="2022-07-25T16:44:57Z" duration-ms="5125" status="PASS">
-        </test-method>
-      </class>
-    </test>
-    <test started-at="2022-07-25T16:44:57Z" name="MoreDetails" finished-at="2022-07-25T16:45:18Z" duration-ms="21000">
-      <class name="TempsusCentralAccountDetails.MoreDetails">
-        <test-method is-config="true" signature="executebrowser()" started-at="2022-07-25T16:44:57Z" name="executebrowser" finished-at="2022-07-25T16:44:58Z" duration-ms="810" status="PASS">
-        </test-method>
-        <test-method signature="login()" started-at="2022-07-25T16:44:58Z" name="login" finished-at="2022-07-25T16:44:59Z" duration-ms="1178" status="PASS">
-        </test-method>
-        <test-method signature="moreDetails()" started-at="2022-07-25T16:44:59Z" name="moreDetails" finished-at="2022-07-25T16:45:13Z" duration-ms="13894" status="PASS">
-        </test-method>
-        <test-method is-config="true" signature="testdown()" started-at="2022-07-25T16:45:13Z" name="testdown" finished-at="2022-07-25T16:45:18Z" duration-ms="5116" status="PASS">
+        <test-method is-config="true" signature="teardown()" started-at="2022-07-29T12:41:59Z" name="teardown" finished-at="2022-07-29T12:41:59Z" duration-ms="172" status="PASS">
         </test-method>
       </class>
     </test>

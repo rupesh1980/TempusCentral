@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+  <test thread-count="5" name="AllFieldsAreBlank">
+    <classes>
+      <class name="companyDetails.AllFieldsAreBlank"/>
+         </classes>
+  </test> <!-- Test -->
+   <test thread-count="5" name="Addlocation">
+    <classes>
+      <class name="companyDetails.Addlocation"/>
+      </classes>
+  </test> <!-- Test -->
+    <test thread-count="5" name="locationandparentlocationsame">
+    <classes>
+      <class name="companyDetails.locationandparentlocationsame"/>
+         </classes>
+  </test> <!-- Test -->  
+ 
+  
+ 
+
+   <test thread-count="5" name="addParentlocationoforNewLocation">
+    <classes>
+      <class name="companyDetails.addParentlocationoforNewLocation"/>
+      </classes>
+  </test> <!-- Test -->
+  
+  
+   <test thread-count="5" name="deleteLocationalreadyexists">
+    <classes>
+      <class name="companyDetails.deleteLocationalreadyexists"/>
+         </classes>
+  </test> <!-- Test -->  
+  
+  
+ 
+    <test thread-count="5" name="reset">
+    <classes>
+      <class name="companyDetails.reset"/>
+         </classes>
+  </test> <!-- Test -->  
+   <test thread-count="5" name="search">
+    <classes>
+      <class name="companyDetails.search"/>
+         </classes>
+  </test> <!-- Test -->  
+  <test thread-count="5" name="selectParentLocation">
+    <classes>
+      <class name="companyDetails.selectParentLocation"/>
+         </classes>
+         
+  </test> <!-- Test -->  
+   <test thread-count="5" name="deleteLocation">
+    <classes>
+      <class name="companyDetails.deleteLocation"/>
+         </classes>
+  </test> <!-- Test -->  
+</suite> <!-- Suite -->

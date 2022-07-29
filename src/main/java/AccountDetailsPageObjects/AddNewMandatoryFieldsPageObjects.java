@@ -16,7 +16,8 @@ public class AddNewMandatoryFieldsPageObjects {
 	 WebDriver driver;
 	     protected By master=By.xpath("//a[@id=\'MainMenudiv_1\']/img");
 	     protected By EditDetails=By.id("btnCompanyform");
-	     protected By accountdetails=By.xpath("//*[contains(text(),\' Account Details\')]");
+	     protected By companylocation=By.xpath("//*[contains(text(),\' Company Locations\')]");
+	     protected By accountDetails=By.xpath("//*[contains(text(),\' Account Details\')]");
 	     protected By website=By.xpath("//input[@id=\'txtWebsite\']");
 	     protected By update=By.xpath("//input[@id=\'btnUpdateCompany\']");
 	     protected By textfornewfield=By.id("txtCompanyParametername");
@@ -59,9 +60,9 @@ public class AddNewMandatoryFieldsPageObjects {
 	{
 		  return driver.findElement(master);
 	}
-	  public WebElement clickAccountDetails()
+	  public WebElement clickCompanyLocation()
 		{
-			  return driver.findElement(accountdetails);
+			  return driver.findElement(companylocation);
 		}
 	  public WebElement clickEdit()
 		{
@@ -148,10 +149,15 @@ public class AddNewMandatoryFieldsPageObjects {
 		{
 			  return driver.findElement(addTextForNewField);
 		}
+	  public WebElement clickAccountDetails()
+		{
+			  return driver.findElement(accountDetails);
+		}
 	  public WebElement clickNewField()
 		{
 			  return driver.findElement(newfield);
 		}
+
 
 
 

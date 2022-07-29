@@ -3,16 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TempsusCentralAccountDetails.AccountAddNewFields">
+      <class name="designationMaster.allFieldsAreBlank">
         <methods>
+          <include name="fieldsblank"/>
           <include name="executebrowser"/>
-          <include name="login"/>
-          <include name="DeleteDropDownOption"/>
-          <include name="addMandoryTextField"/>
-          <include name="addMandoryDropdownField"/>
-          <include name="testdown"/>
         </methods>
-      </class> <!-- TempsusCentralAccountDetails.AccountAddNewFields -->
+      </class> <!-- designationMaster.allFieldsAreBlank -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
