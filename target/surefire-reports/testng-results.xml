@@ -1,35 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="6" passed="6" failed="0" skipped="0">
+<testng-results total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-29T12:41:46Z" name="Suite" finished-at="2022-07-29T12:42:31Z" duration-ms="45018">
+  <suite started-at="2022-07-29T18:41:35Z" name="Suite" finished-at="2022-07-29T18:42:08Z" duration-ms="33138">
     <groups>
     </groups>
-    <test started-at="2022-07-29T12:41:59Z" name="AdminRoleCompanyLocationViewEditDeleteCheck" finished-at="2022-07-29T12:42:31Z" duration-ms="31327">
-      <class name="AdminRoleMaster.AdminRoleCompanyLocationViewEditDeleteCheck">
-        <test-method is-config="true" signature="executebrowser()" started-at="2022-07-29T12:41:59Z" name="executebrowser" finished-at="2022-07-29T12:42:00Z" duration-ms="818" status="PASS">
+    <test started-at="2022-07-29T18:41:44Z" name="add" finished-at="2022-07-29T18:41:52Z" duration-ms="8043">
+      <class name="designationMaster.add">
+        <test-method is-config="true" signature="executebrowser()" started-at="2022-07-29T18:41:44Z" name="executebrowser" finished-at="2022-07-29T18:41:45Z" duration-ms="1229" status="PASS">
         </test-method>
-        <test-method signature="login()" started-at="2022-07-29T12:42:00Z" name="login" finished-at="2022-07-29T12:42:07Z" duration-ms="7279" status="PASS">
+        <test-method signature="fieldsblank()" started-at="2022-07-29T18:41:45Z" name="fieldsblank" finished-at="2022-07-29T18:41:51Z" duration-ms="6607" status="PASS">
         </test-method>
-        <test-method signature="companyLocationAdd()" started-at="2022-07-29T12:42:07Z" name="companyLocationAdd" finished-at="2022-07-29T12:42:14Z" duration-ms="6373" status="PASS">
-        </test-method>
-        <test-method signature="companyLocatinEditRecord()" started-at="2022-07-29T12:42:14Z" name="companyLocatinEditRecord" finished-at="2022-07-29T12:42:18Z" duration-ms="4311" status="PASS">
-        </test-method>
-        <test-method signature="companyLocationDelete()" started-at="2022-07-29T12:42:18Z" name="companyLocationDelete" finished-at="2022-07-29T12:42:27Z" duration-ms="8434" status="PASS">
-        </test-method>
-        <test-method is-config="true" signature="teardown()" started-at="2022-07-29T12:42:27Z" name="teardown" finished-at="2022-07-29T12:42:31Z" duration-ms="4111" status="PASS">
+        <test-method is-config="true" signature="teardown()" started-at="2022-07-29T18:41:51Z" name="teardown" finished-at="2022-07-29T18:41:52Z" duration-ms="207" status="PASS">
         </test-method>
       </class>
     </test>
-    <test started-at="2022-07-29T12:41:46Z" name="FullUserAdminRoleCompanyLocationVeiwEdditDeleteOnly" finished-at="2022-07-29T12:41:59Z" duration-ms="13657">
-      <class name="AdminRoleMaster.FullUserAdminRoleCompanyLocationVeiwEdditDeleteOnly">
-        <test-method is-config="true" signature="executebrowser()" started-at="2022-07-29T12:41:46Z" name="executebrowser" finished-at="2022-07-29T12:41:47Z" duration-ms="1702" status="PASS">
+    <test started-at="2022-07-29T18:41:35Z" name="allFieldsBlank" finished-at="2022-07-29T18:41:44Z" duration-ms="8617">
+      <class name="designationMaster.allFieldsBlank">
+        <test-method is-config="true" signature="executebrowser()" started-at="2022-07-29T18:41:35Z" name="executebrowser" finished-at="2022-07-29T18:41:38Z" duration-ms="3583" status="PASS">
         </test-method>
-        <test-method signature="login()" started-at="2022-07-29T12:41:47Z" name="login" finished-at="2022-07-29T12:41:53Z" duration-ms="6070" status="PASS">
+        <test-method signature="fieldsblank()" started-at="2022-07-29T18:41:38Z" name="fieldsblank" finished-at="2022-07-29T18:41:43Z" duration-ms="4933" status="PASS">
         </test-method>
-        <test-method signature="fullUseAccessAddEditOnly()" started-at="2022-07-29T12:41:53Z" name="fullUseAccessAddEditOnly" finished-at="2022-07-29T12:41:59Z" duration-ms="5709" status="PASS">
+        <test-method is-config="true" signature="teardown()" started-at="2022-07-29T18:41:43Z" name="teardown" finished-at="2022-07-29T18:41:44Z" duration-ms="98" status="PASS">
         </test-method>
-        <test-method is-config="true" signature="teardown()" started-at="2022-07-29T12:41:59Z" name="teardown" finished-at="2022-07-29T12:41:59Z" duration-ms="172" status="PASS">
+      </class>
+    </test>
+    <test started-at="2022-07-29T18:41:52Z" name="updateRecord" finished-at="2022-07-29T18:41:58Z" duration-ms="6793">
+      <class name="designationMaster.updateRecord">
+        <test-method is-config="true" signature="executebrowser()" started-at="2022-07-29T18:41:52Z" name="executebrowser" finished-at="2022-07-29T18:41:53Z" duration-ms="1159" status="PASS">
+        </test-method>
+        <test-method signature="deleteRecord()" started-at="2022-07-29T18:41:53Z" name="deleteRecord" finished-at="2022-07-29T18:41:58Z" duration-ms="5418" status="PASS">
+        </test-method>
+        <test-method is-config="true" signature="teardown()" started-at="2022-07-29T18:41:58Z" name="teardown" finished-at="2022-07-29T18:41:58Z" duration-ms="215" status="PASS">
+        </test-method>
+      </class>
+    </test>
+    <test started-at="2022-07-29T18:41:58Z" name="deleteRecord" finished-at="2022-07-29T18:42:08Z" duration-ms="9646">
+      <class name="designationMaster.deleteRecord">
+        <test-method is-config="true" signature="executebrowser()" started-at="2022-07-29T18:41:58Z" name="executebrowser" finished-at="2022-07-29T18:42:00Z" duration-ms="1200" status="PASS">
+        </test-method>
+        <test-method signature="deleteRecord()" started-at="2022-07-29T18:42:00Z" name="deleteRecord" finished-at="2022-07-29T18:42:08Z" duration-ms="8085" status="PASS">
+        </test-method>
+        <test-method is-config="true" signature="teardown()" started-at="2022-07-29T18:42:08Z" name="teardown" finished-at="2022-07-29T18:42:08Z" duration-ms="361" status="PASS">
         </test-method>
       </class>
     </test>

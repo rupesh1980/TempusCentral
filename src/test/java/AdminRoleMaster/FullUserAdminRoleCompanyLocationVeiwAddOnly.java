@@ -220,6 +220,10 @@ public class FullUserAdminRoleCompanyLocationVeiwAddOnly extends LoginPageSetup{
 		  
 	  // arcl.clickCompanyLocationView().click();
 	   arcl.clickCompanyLocationDeleteAccess().click();
+	   arcl.clickCompanyLocationDeleteAccess().click();
+	   arcl.clickCompanyLocationEditAccess().click();
+	   arcl.clickCompanyLocationView().click();
+	   
 	   arcl.clickUpdate().click();
 
 		 Thread.sleep(2000);
@@ -267,11 +271,12 @@ public class FullUserAdminRoleCompanyLocationVeiwAddOnly extends LoginPageSetup{
 	   Thread.sleep(2000);
 	   adminRoleFullAccessCompanyLocations arcl=new adminRoleFullAccessCompanyLocations(driver);
 		  
-	 //  boolean addTick=arcl.clickCompanyLocationAddAccess().isSelected();
-	 //  if(addTick==false)
-	 //  {
-	   arcl.clickCompanyLocationAddAccess().click();
-	 //  }
+	
+	   
+	
+		  arcl.clickCompanyLocationAddAccess().click();
+		 
+
 	   arcl.clickUpdate().click();
 
 		 Thread.sleep(2000);

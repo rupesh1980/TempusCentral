@@ -2,59 +2,67 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 
-  <test thread-count="5" name="AllFieldsAreBlank">
+  <test thread-count="5" name="addDeptWithMultipleLocations">
     <classes>
-      <class name="companyDetails.AllFieldsAreBlank"/>
+      <class name="DepartmentMaster.addDeptWithMultipleLocations"/>
          </classes>
   </test> <!-- Test -->
-   <test thread-count="5" name="Addlocation">
-    <classes>
-      <class name="companyDetails.Addlocation"/>
-      </classes>
-  </test> <!-- Test -->
-    <test thread-count="5" name="locationandparentlocationsame">
-    <classes>
-      <class name="companyDetails.locationandparentlocationsame"/>
-         </classes>
-  </test> <!-- Test -->  
- 
   
- 
-
-   <test thread-count="5" name="addParentlocationoforNewLocation">
+  <test thread-count="5" name="addDeptwithNoLocation">
     <classes>
-      <class name="companyDetails.addParentlocationoforNewLocation"/>
-      </classes>
+      <class name="DepartmentMaster.addDeptwithNoLocation"/>
+         </classes>
+  </test> <!-- Test -->
+   <test thread-count="5" name="addDeptwithSingleLocation">
+    <classes>
+      <class name="DepartmentMaster.addDeptwithSingleLocation"/>
+         </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="addDifferentParentDept">
+    <classes>
+      <class name="DepartmentMaster.addDifferentParentDept"/>
+         </classes>
   </test> <!-- Test -->
   
+   <test thread-count="5" name="addSameParentDept">
+    <classes>
+      <class name="DepartmentMaster.addSameParentDept"/>
+         </classes>
+  </test> <!-- Test -->
   
-   <test thread-count="5" name="deleteLocationalreadyexists">
+   <test thread-count="5" name="deleteDepartmentWithEmp">
     <classes>
-      <class name="companyDetails.deleteLocationalreadyexists"/>
+      <class name="DepartmentMaster.deleteDepartmentWithEmp"/>
          </classes>
-  </test> <!-- Test -->  
+  </test> <!-- Test -->
   
+  <test thread-count="5" name="deleteDepartmentWithoutEmp">
+    <classes>
+      <class name="DepartmentMaster.deleteDepartmentWithoutEmp"/>
+         </classes>
+  </test> <!-- Test -->
   
- 
-    <test thread-count="5" name="reset">
+  <test thread-count="5" name="DepartmentAllFieldsBlank">
     <classes>
-      <class name="companyDetails.reset"/>
+      <class name="DepartmentMaster.DepartmentAllFieldsBlank"/>
          </classes>
-  </test> <!-- Test -->  
-   <test thread-count="5" name="search">
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="DepartmentShortNameSame">
     <classes>
-      <class name="companyDetails.search"/>
+      <class name="DepartmentMaster.DepartmentShortNameSame"/>
          </classes>
-  </test> <!-- Test -->  
-  <test thread-count="5" name="selectParentLocation">
+  </test> <!-- Test -->
+  
+   <test thread-count="5" name="unselectlocationfromparenttochild">
     <classes>
-      <class name="companyDetails.selectParentLocation"/>
+      <class name="DepartmentMaster.unselectlocationfromparenttochild"/>
          </classes>
-         
-  </test> <!-- Test -->  
-   <test thread-count="5" name="deleteLocation">
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="updateDepartment">
     <classes>
-      <class name="companyDetails.deleteLocation"/>
+      <class name="DepartmentMaster.updateDepartment"/>
          </classes>
-  </test> <!-- Test -->  
+  </test> <!-- Test -->
 </suite> <!-- Suite -->

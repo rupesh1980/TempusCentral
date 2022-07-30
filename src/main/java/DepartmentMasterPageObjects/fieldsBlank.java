@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 
 public class fieldsBlank {
   public WebDriver driver;
-  private By clickDepartment=By.xpath("//a[@href=\'/Master/DepartmentMaster\']");
+  private By clickDepartment=By.xpath("//*[@id=\'li_DepartmentMaster\']/a/span");
   private By clickAdd=By.id("btnDepartmentSave");
   public fieldsBlank(WebDriver driver)
   {

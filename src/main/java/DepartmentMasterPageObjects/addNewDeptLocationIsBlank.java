@@ -11,6 +11,7 @@ public class addNewDeptLocationIsBlank {
   private By shortname=By.id("txtShortName");
   private By departmentName=By.id("txtDepartmentName");
   private By clickAdd=By.id("btnDepartmentSave");
+  
   public addNewDeptLocationIsBlank(WebDriver driver)
   {
 	  this.driver=driver;
@@ -32,4 +33,5 @@ public class addNewDeptLocationIsBlank {
   {
 	  return driver.findElement(departmentName);
   }
+  
 }

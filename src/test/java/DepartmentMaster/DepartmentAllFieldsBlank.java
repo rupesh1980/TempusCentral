@@ -44,12 +44,13 @@ public class DepartmentAllFieldsBlank extends LoginPageSetup {
 			wait=new WebDriverWait(driver, Duration.ofSeconds(5000));
 			wait.until(ExpectedConditions.visibilityOfElementLocated(master));
 		    cd.clickMaster().click();    		  
-		    fieldsBlank fb=new fieldsBlank(driver);		    
+		    fieldsBlank fb=new fieldsBlank(driver);		
+		    
 			fb.clickDepartment().click();
 			addNewDeptLocationIsBlank adn=new addNewDeptLocationIsBlank(driver);
 			adn.clickAdd().click();
 	}
-	@AfterTest(enabled=true)
+	@AfterTest(enabled=false)
 	public void teardown()
 	{
 		driver.close();
