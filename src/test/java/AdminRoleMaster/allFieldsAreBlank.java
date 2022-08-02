@@ -29,8 +29,8 @@ public class allFieldsAreBlank extends LoginPageSetup{
      @BeforeTest
      public void executebrowser() throws IOException
      {
-    	 driver=browserSetup();
-    	
+    	 
+    	 driver=browserSetup();    	
      }
 	@SuppressWarnings("unused")
 	@Test(priority=1,enabled=true)
@@ -39,7 +39,7 @@ public class allFieldsAreBlank extends LoginPageSetup{
 	    try {
 		
 	    	 driver.get(prop.getProperty("url"));
-				driver.manage().window().maximize();
+			 driver.manage().window().maximize();
 			loginPageObjects lp=new loginPageObjects(driver);
 			lp.getUsername().sendKeys(prop.getProperty("username"));
 			//log.info("User has entered username");
