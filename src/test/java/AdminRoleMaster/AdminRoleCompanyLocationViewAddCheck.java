@@ -51,6 +51,7 @@ public class AdminRoleCompanyLocationViewAddCheck extends LoginPageSetup{
     private By message=By.xpath("//*[@id=\'toast-container\']/div/div");
 	  private By timeZone=By.id("DropTimeZone");
 	  private By addLocationWithRole=By.id("btnAddLocationWithRole");
+	  private By selectemp=By.xpath("//*[@id=\'tblEmployeeList_wrapper\']/div[1]/div[1]/div/table/thead/tr/th[1]/label/span");
 
 	
 	//  protected By addoptions=By.id("AddOptions");
@@ -72,7 +73,7 @@ public class AdminRoleCompanyLocationViewAddCheck extends LoginPageSetup{
 			lp.getUsername().sendKeys(prop.getProperty("fullusername"));
 			//log.info("User has entered username");
 			//System.out.println(prop.getProperty("username"));
-			lp.getPassword().sendKeys(prop.getProperty("password"));
+			lp.getPassword().sendKeys(prop.getProperty("fulluserpassword"));
 			//log.info("User has entered password");
 			lp.login().click();
 		    Thread.sleep(5000);
@@ -95,7 +96,7 @@ public class AdminRoleCompanyLocationViewAddCheck extends LoginPageSetup{
 		List<WebElement> locations=driver.findElements(By.xpath("//a[@class=\'jstree-anchor\']"));
 		for(WebElement list:locations)
 		{
-			if(list.getText().equalsIgnoreCase("Location 8"))
+			if(list.getText().equalsIgnoreCase("Location 1"))
 			{
 				list.click();
 				break;
@@ -146,11 +147,12 @@ public class AdminRoleCompanyLocationViewAddCheck extends LoginPageSetup{
 		{
 			System.out.println("user can add details");
 			CompanyDetailsFieldsBlank cd=new CompanyDetailsFieldsBlank(driver);
+			adminRoleFullAccessCompanyLocations arf=new adminRoleFullAccessCompanyLocations(driver);
 		    cd.clickMaster().click();
 		    cd.clickCompanyDetails().click();
 		    cd.clickAddButton().click();
 		    addLocation al=new addLocation(driver);
-		    al.sendDatatoLocationName().sendKeys("location 8");
+		    al.sendDatatoLocationName().sendKeys("location 13");
 		    Select timezone=new Select(driver.findElement(timeZone));
 		    timezone.selectByValue("-11:30");
 		    wait = new WebDriverWait(driver,Duration.ofSeconds(5000));
@@ -159,7 +161,9 @@ public class AdminRoleCompanyLocationViewAddCheck extends LoginPageSetup{
 		    driver.findElement(By.id("btnLocationSave")).click();
 	      //  Thread.sleep(2000);
 		    wait.until(ExpectedConditions.visibilityOfElementLocated(addLocationWithRole));
-	        driver.findElement(addLocationWithRole).click();
+	     
+		    arf.clickSelectEmp().click();
+		    driver.findElement(addLocationWithRole).click();
 		}
 		else
 		{

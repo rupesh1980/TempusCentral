@@ -46,6 +46,8 @@ public class AddNewMandatoryFieldsPageObjects {
 	     protected By addDataForOption2=By.id("txtOption2");
 	     protected By addOption=By.xpath("//img[@id=\'AddOptions\']");
 	     protected By addTextForNewField= By.id("btnCompanyAddParameter");
+		  protected By uploadexcel=By.xpath("//*[@id=\'toast-container\']/div/div");
+
 	   //  protected By newfield=By.xpath("//*[contains(text(),\'newfield\')]");
 	   //  protected By requiredfield=By.xpath("//input[@class=\'form-control Texboxclass Validation_TextBox\']");
 	     
@@ -154,6 +156,10 @@ public class AddNewMandatoryFieldsPageObjects {
 			  return driver.findElement(accountDetails);
 		}
 	  public WebElement clickNewField()
+		{
+			  return driver.findElement(newfield);
+		}
+	  public WebElement clickUploadExcel()
 		{
 			  return driver.findElement(newfield);
 		}

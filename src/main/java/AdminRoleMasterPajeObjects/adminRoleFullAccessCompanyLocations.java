@@ -15,6 +15,7 @@ public class adminRoleFullAccessCompanyLocations {
    private By CompanyLocationEdit=By.xpath("//*[@id=\'TableContent1\']/div[3]/div/div[4]/label/span");
    private By CompanyLocationDelete=By.xpath("//*[@id=\'TableContent1\']/div[3]/div/div[5]/label/span");
    private By CompanyLocationAdd=By.xpath("//*[@id=\'TableContent1\']/div[3]/div/div[3]/label/span");
+  private By selectemp=By.xpath("//*[@id=\'tblEmployeeList_wrapper\']/div[1]/div[1]/div/table/thead/tr/th[1]/label/span");
 
 
 
@@ -55,6 +56,10 @@ public class adminRoleFullAccessCompanyLocations {
     public WebElement clickCompanyLocationAddAccess()
     {
     	return driver.findElement(CompanyLocationAdd);
+    }
+    public WebElement clickSelectEmp()
+    {
+    	return driver.findElement(selectemp);
     }
 }
 

@@ -240,8 +240,7 @@ public class FullUserAdminRoleCompanyLocationAddViewEditDelete extends LoginPage
 	
 		
 		arcl.clickCompanyLocationEditAccess().click();
-		arcl.clickCompanyLocationDeleteAccess().click();
-		arcl.clickCompanyLocationAddAccess().click();
+		
 		arcl.clickUpdate().click();
 
 		Thread.sleep(2000);

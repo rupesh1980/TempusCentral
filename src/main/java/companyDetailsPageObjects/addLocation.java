@@ -10,6 +10,10 @@ public class addLocation {
 	  private By master=By.xpath("//a[@id=\'MainMenudiv_1\']/img");
 	  private By add=By.id("btnLocationSave");
 	  private By locationName=By.id("txtLocationName");
+	  private By clickadd=By.id("btnAddLocationWithRole");
+	  
+	  private By clickEmpAdd=By.xpath("//*[@id=\'tblEmployeeList_wrapper\']/div[1]/div[1]/div/table/thead/tr/th[1]/label/span");
+
 	  
 	 public addLocation(WebDriver driver)
 	 {
@@ -31,6 +35,14 @@ public class addLocation {
 	 public WebElement sendDatatoLocationName()
 	 {
 		 return driver.findElement(locationName);
+	 }
+	 public WebElement clickAdd()
+	 {
+		 return driver.findElement(clickadd);
+	 }
+	 public WebElement clickEmpAdd()
+	 {
+		 return driver.findElement(clickEmpAdd);
 	 }
 	 
 }

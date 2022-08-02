@@ -25,10 +25,9 @@ public class Addlocation extends LoginPageSetup{
 	WebDriverWait wait;
      private By companyLocation=By.xpath("//*[contains(text(),\'Company Locations\')]");
 	  private By timeZone=By.id("DropTimeZone");
-
-	
-	//  protected By addoptions=By.id("AddOptions");
-     @BeforeTest
+	  private By clickadd=By.id("btnAddLocationWithRole");
+	  private By clickEmpAdd=By.xpath("//*[@id=\'tblEmployeeList_wrapper\']/div[1]/div[1]/div/table/thead/tr/th[1]/label/span");
+	 @BeforeTest
      public void executebrowser() throws IOException
      {
     	 driver=browserSetup();
@@ -40,8 +39,8 @@ public class Addlocation extends LoginPageSetup{
 	{
 	    try {
 		
-	    	 driver.get(prop.getProperty("url"));
-				driver.manage().window().maximize();
+	    	driver.get(prop.getProperty("url"));
+			driver.manage().window().maximize();
 			loginPageObjects lp=new loginPageObjects(driver);
 			lp.getUsername().sendKeys(prop.getProperty("username"));
 			//log.info("User has entered username");
@@ -56,19 +55,23 @@ public class Addlocation extends LoginPageSetup{
 	    	System.out.println(e.getMessage());
 	    }
 	}
-	@Test(priority=2,enabled=true)
+	@Test(priority=2,enabled=true,invocationCount = 2)
 	public void addLocation() throws InterruptedException
 	{
+		int i=1;
 		CompanyDetailsFieldsBlank cd=new CompanyDetailsFieldsBlank(driver);
 	    cd.clickMaster().click();
 	    cd.clickCompanyDetails().click();
-	    cd.clickAddButton().click();
 	    addLocation al=new addLocation(driver);
-	    al.sendDatatoLocationName().sendKeys("location 8");
+	    al.sendDatatoLocationName().sendKeys("location "+i);
+	    i=i+1;
 	    Select timezone=new Select(driver.findElement(timeZone));
 	    timezone.selectByValue("-11:30");
 	    al.clickAddButton().click();
-	    Thread.sleep(3000);
+	    Thread.sleep(2000);
+	    al.clickEmpAdd().click();
+	    Thread.sleep(2000);
+	    al.clickAdd().click();
 	    
 	}	  
 	@AfterTest(enabled=true)

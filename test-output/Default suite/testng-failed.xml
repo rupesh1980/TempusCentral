@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="AdminRoleMaster.FullUserAdminRoleCompanyLocationVeiwAddOnly">
+      <class name="AdminRoleMaster.AdminRoleCompanyLocationViewAddCheck">
         <methods>
-          <include name="fullUseAccessAddOnly"/>
           <include name="executebrowser"/>
+          <include name="companyLocationDelete"/>
+          <include name="companyLocatinViewonly"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- AdminRoleMaster.FullUserAdminRoleCompanyLocationVeiwAddOnly -->
+      </class> <!-- AdminRoleMaster.AdminRoleCompanyLocationViewAddCheck -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

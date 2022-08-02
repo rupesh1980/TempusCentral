@@ -76,7 +76,7 @@ public class deleteLocationalreadyexists extends LoginPageSetup{
 		for(WebElement listlocations:locations)
 		{
 			
-			if(listlocations.getText().equalsIgnoreCase("Location 5"))
+			if(listlocations.getText().equalsIgnoreCase("Location 3"))
 			{
 				listlocations.click();
 				dl.clickDelete().click();

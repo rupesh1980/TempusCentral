@@ -15,7 +15,7 @@ public class addTextasNewField{
 	 private By dropdown=By.id("dropDownStatus");
 	 private By textparameter=By.id("txtParametername");
 	 private By addMsg=By.xpath("//*[@id=\'toast-container\']/div/div");
-	 private By addedtoform=By.xpath("//*[@id=\'toast-container\']/div[2]/div");
+	 private By addedtoform=By.xpath("//*[@id=\'toast-container\']/div/div");
 
 
 

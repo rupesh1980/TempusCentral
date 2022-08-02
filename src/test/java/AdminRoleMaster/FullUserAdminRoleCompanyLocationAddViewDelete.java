@@ -241,7 +241,7 @@ public class FullUserAdminRoleCompanyLocationAddViewDelete extends LoginPageSetu
 		// if(addTick==false)
 		// {
 		arcl.clickCompanyLocationAddAccess().click();
-		arcl.clickCompanyLocationDeleteAccess().click();
+		arcl.clickCompanyLocationEditAccess().click();
 
 
 		// }

@@ -75,7 +75,7 @@ public class locationandparentlocationsame extends LoginPageSetup{
 	    for(WebElement listlocation:locations)
 	    	
 	   {
-	   	if(listlocation.getText().equalsIgnoreCase("location 8"))
+	   	if(listlocation.getText().equalsIgnoreCase("location 12"))
 	   	{
 	    		listlocation.click();
 	    	}
@@ -91,7 +91,7 @@ public class locationandparentlocationsame extends LoginPageSetup{
 	    for(WebElement listlocations:locations2)
 	    	
 	   {
-	    	if(listlocations.getText().equalsIgnoreCase("location 8"))
+	    	if(listlocations.getText().equalsIgnoreCase("location 12"))
 	    	{
 	    		listlocations.click();
 	    	}

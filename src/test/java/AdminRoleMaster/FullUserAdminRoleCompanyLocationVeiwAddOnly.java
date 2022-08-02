@@ -98,28 +98,12 @@ public class FullUserAdminRoleCompanyLocationVeiwAddOnly extends LoginPageSetup{
 	   Thread.sleep(2000);
 	   adminRoleFullAccessCompanyLocations arcl=new adminRoleFullAccessCompanyLocations(driver);
 	  
-	   boolean viewresult=driver.findElement(By.id("ViewCheckbox/1/26")).isSelected();
-	   if(viewresult==false)
-	   {
-	   arcl.clickCompanyLocationView().click();
-	   }
-	   else
-	   {
-		   arcl.clickCompanyLocationView().click();
-
-	   }
-	   boolean editresult=driver.findElement(By.id("EditCheckboxs/1/1")).isSelected();
+	
 	 
-	   if(editresult==true) {
-		   arcl.clickCompanyLocationEditAccess().click();
+		   arcl.clickCompanyLocationAddAccess().click();
 
-	   }
-	   boolean deleteresult=driver.findElement(By.id("DeleteCheckbox/1/1")).isSelected();
-		 
-	   if(deleteresult==true) {
-		   arcl.clickCompanyLocationDeleteAccess().click();
-
-	   }
+	  
+	  
 	   
    
 	   arcl.clickUpdate().click();

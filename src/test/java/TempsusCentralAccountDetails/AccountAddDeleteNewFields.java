@@ -40,7 +40,8 @@ public class AccountAddDeleteNewFields extends LoginPageSetup{
 	 protected By addNewField=By.xpath("//select[@id=\'dropDownStatus\']");
 	  protected By master=By.xpath("//a[@id=\'MainMenudiv_1\']/img");
 	  protected By selectFromDropDown=By.xpath("//select[@class=\' floating-select ClassDropxtraParameter\']");
-	//  protected By addoptions=By.id("AddOptions");
+	 
+	
      @BeforeTest
      public void executebrowser() throws IOException
      {
@@ -72,7 +73,7 @@ public class AccountAddDeleteNewFields extends LoginPageSetup{
 				   //  Assert.assertEquals(driver.getTitle(), "Tempus Central");
 	    
 	   boolean loginresult=driver.findElement(By.xpath("//div[@class=\'d-flex align-items-baseline flex-wrap mr-5\']/h5")).isDisplayed();
-	   System.out.println("result is:" + loginresult);
+	  // System.out.println("result is:" + loginresult);
 		  
 	   if(true)
 	   {
@@ -107,11 +108,12 @@ public class AccountAddDeleteNewFields extends LoginPageSetup{
 			AddNewMandatoryFieldsPageObjects amf=new AddNewMandatoryFieldsPageObjects(driver);
 		        wait = new WebDriverWait(driver,Duration.ofSeconds(2000));
 					wait.until(ExpectedConditions.visibilityOfElementLocated(master));
-					Thread.sleep(4000);
 					amf.clickOnMaster().click();
+					Thread.sleep(4000);
+					amf.clickAccountDetails().click();
 					Thread.sleep(2000);			
-					amf.clickCompanyLocation().click();
-					Thread.sleep(2000);
+				//	amf.clickCompanyLocation().click();
+					//Thread.sleep(2000);
 			        amf.clickEdit().click();
 			    	Thread.sleep(2000);			
 			     Select addnewfield=new Select(driver.findElement(addNewField));
@@ -249,7 +251,7 @@ public class AccountAddDeleteNewFields extends LoginPageSetup{
 			System.out.println(e.getMessage());
 		}
 	}
-		@Test(priority=4,enabled=true,dependsOnMethods = {"login"})
+		@Test(priority=5,enabled=true,dependsOnMethods = {"login"})
 		public void addMandoryDropdownField() throws InterruptedException
 		{
 			try

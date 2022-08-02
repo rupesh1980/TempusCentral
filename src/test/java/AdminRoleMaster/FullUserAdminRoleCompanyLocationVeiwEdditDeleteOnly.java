@@ -238,8 +238,8 @@ public class FullUserAdminRoleCompanyLocationVeiwEdditDeleteOnly extends LoginPa
 		adminRoleFullAccessCompanyLocations arcl = new adminRoleFullAccessCompanyLocations(driver);
 
 	
-		
-		arcl.clickCompanyLocationEditAccess().click();
+		arcl.clickCompanyLocationAddAccess().click();
+	//	arcl.clickCompanyLocationEditAccess().click();
 		arcl.clickCompanyLocationDeleteAccess().click();
 
 		arcl.clickUpdate().click();

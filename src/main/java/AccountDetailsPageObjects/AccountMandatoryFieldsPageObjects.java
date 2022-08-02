@@ -12,7 +12,8 @@ public class AccountMandatoryFieldsPageObjects {
      protected By companyname=By.id("txtCompanyName");     
      protected By emailId=By.id("txtEmailId");
      protected By update=By.xpath("//input[@id=\'btnUpdateCompany\']");
-     
+	  protected By uploadexcel=By.xpath("//*[@id=\'toast-container\']/div/div");
+
      
     public AccountMandatoryFieldsPageObjects(WebDriver driver)
     {
@@ -31,6 +32,11 @@ public class AccountMandatoryFieldsPageObjects {
     public WebElement clickUpdate()    
     {
 		return driver.findElement(update);
+    	
+    }
+    public WebElement clickUploadExcel()    
+    {
+		return driver.findElement(uploadexcel);
     	
     }
 }

@@ -240,7 +240,7 @@ public class FullUserAdminRoleCompanyLocationVeiwAddEditOnly extends LoginPageSe
 		// boolean addTick=arcl.clickCompanyLocationAddAccess().isSelected();
 		// if(addTick==false)
 		// {
-		arcl.clickCompanyLocationAddAccess().click();
+		//arcl.clickCompanyLocationAddAccess().click();
 		arcl.clickCompanyLocationEditAccess().click();
 
 		// }

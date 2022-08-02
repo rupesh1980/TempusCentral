@@ -31,6 +31,7 @@ public class AddLogo extends LoginPageSetup{
 	 protected By addNewField=By.xpath("//select[@id=\'dropDownStatus\']");
 	  protected By master=By.xpath("//a[@id=\'MainMenudiv_1\']/img");
 	  protected By selectFromDropDown=By.xpath("//select[@class=\' floating-select ClassDropxtraParameter\']");
+	  protected By uploadexcel=By.xpath("//*[@id=\'toast-container\']/div/div");
      @BeforeTest
      public void executebrowser() throws IOException
      {
@@ -77,10 +78,11 @@ public class AddLogo extends LoginPageSetup{
 			      driver.findElement(By.xpath("//i[@class=\'fa fa-pen icon-sm text-muted\']")).click();
 			  	Thread.sleep(2000);
 			 Runtime.getRuntime().exec("C:\\Users\\DELL\\eclipse-workspace\\demo\\files\\newfile.exe");
-			 Thread.sleep(2000);
-			  //	Run("C:\\Users\\DELL\\Desktop\\newfile.exe");
+				wait.until(ExpectedConditions.visibilityOfElementLocated(uploadexcel));
+				
+
 			  	AccountMandatoryFieldsPageObjects amfp=new AccountMandatoryFieldsPageObjects(driver);
-			  	
+			  
 			  	amfp.clickUpdate().click();
 			  Thread.sleep(5000);
 			    	 
@@ -112,12 +114,21 @@ public class AddLogo extends LoginPageSetup{
 			      driver.findElement(By.xpath("//i[@class=\'fa fa-pen icon-sm text-muted\']")).click();
 			  	Thread.sleep(2000);
 			 Runtime.getRuntime().exec("C:\\Users\\DELL\\eclipse-workspace\\demo\\files\\excel.exe");
-			 Thread.sleep(2000);
-			  //	Run("C:\\Users\\DELL\\Desktop\\newfile.exe");
+			  	Thread.sleep(2000);
+
 			  	AccountMandatoryFieldsPageObjects amfp=new AccountMandatoryFieldsPageObjects(driver);
-			//  	Thread.sleep(2000);
-			  	amfp.clickUpdate().click();
-				  Thread.sleep(2000);
+			  	Thread.sleep(2000);
+			  	String exccelMsg=driver.findElement(By.xpath("//*[@id=\'toast-container\']/div/div")).getText();
+			 	if(exccelMsg.equalsIgnoreCase("Sorry!! Upload only jpg, jpeg, png, bmp image"))
+			  	{
+			  		System.out.println("Sorry!! Upload only jpg, jpeg, png, bmp image");
+			  	}
+			  	else
+			  	{
+			  		System.out.println("No message");
+			  	}
+			  //	amfp.clickUpdate().click();
+				//  Thread.sleep(2000);
 
 		}
 		catch(Exception e)

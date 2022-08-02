@@ -73,7 +73,7 @@ public class addParentlocationoforNewLocation extends LoginPageSetup{
 	    for(WebElement listlocation:locations)
 	    	
 	   {
-	   	if(listlocation.getText().equalsIgnoreCase("location 11"))
+	   	if(listlocation.getText().equalsIgnoreCase("location 14"))
 	   	{
 	    		listlocation.click();
 	    	}
@@ -88,7 +88,7 @@ public class addParentlocationoforNewLocation extends LoginPageSetup{
 	    for(WebElement listlocations:locations2)
 	    	
 	   {
-	    	if(listlocations.getText().equalsIgnoreCase("location 5"))
+	    	if(listlocations.getText().equalsIgnoreCase("location 15"))
 	    	{
 	    		listlocations.click();
 	    	}
@@ -112,9 +112,7 @@ public class addParentlocationoforNewLocation extends LoginPageSetup{
 	   }
 	   {
 		   System.out.println("no message is displayed");
-	   }
-	 
-	  
+	   }  
 	    
 	}	  
 	
